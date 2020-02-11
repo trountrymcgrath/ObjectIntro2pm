@@ -32,6 +32,7 @@ public class Customer {
                     //we found it!!
                 }
             }
+            return null;
         }
 
 }
