@@ -8,8 +8,10 @@ public class Main {
 		myAccount.deposit(1000);
 		myAccount.addInterest();
 		yourAccount.addInterest();
-		System.out.println("My account has "+ myAccount.checkBalance());
-		System.out.println("Your Account has "+ yourAccount.checkBalance());
+		System.out.println("My account with account number: "+myAccount.getAccountID()+
+						" has "+ myAccount.checkBalance());
+		System.out.println("Your Account with Id " + yourAccount.getAccountID() + " has "
+				+ yourAccount.checkBalance());
 		var succeeded = myAccount.withdraw(2000);
 		if (succeeded)
 			System.out.println("Managed to withdraw 2000");
